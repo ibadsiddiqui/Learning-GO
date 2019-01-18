@@ -1,0 +1,6 @@
+go get <package-url-github>
+// example
+go get github.com/satori/go.uuid
+
+The packages we installed are saved inside the GOPATH env which is our work directory. 
+You can see the packages by going inside the pkg folder inside our work directory cd $GOPATH/pkg.
