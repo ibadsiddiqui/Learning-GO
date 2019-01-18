@@ -1,3 +1,7 @@
+// Methods are a special type of function with a receiver.
+// A receiver can be both a value or a pointer.
+// Let’s create a method called describe which has a receiver type person we created in the above example:
+
 package main
 
 import "fmt"
@@ -33,5 +37,15 @@ func main() {
 	//=> Bob
 
 	pp.describe()
-
 }
+
+// As we can see in the above example,
+// the method now can be called using a dot operator as pp.describe.
+// Note that the receiver is a pointer.
+// With the pointer we are passing a reference to the value,
+// so if we make any changes in the method it will be reflected in the receiver pp.
+// It also does not create a new copy of the object, which saves memory.
+
+// Note that in the above example the value of age is changed,
+// whereas the value of name is not changed because the method setName
+// is of the receiver type whereas setAge is of type pointer.
