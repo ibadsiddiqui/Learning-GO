@@ -14,12 +14,11 @@ func Increment(n int) (int, error) {
 	}
 }
 
-
 func main() {
-	num := -1
+	num := 1
 	inc, err := Increment(num)
 
-	if err != nil {
+	if err != nil{
 		fmt.Printf("Failed Number: %v, error message: %v", num, err)
 	} else {
 		fmt.Printf("Incremented Number: %v", inc)
